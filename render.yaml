@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: breathe-esg-backend
+    env: python
+    rootDir: backend
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+
+  - type: web
+    name: breathe-esg-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "./build"
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://breathe-esg-backend.onrender.com/api
