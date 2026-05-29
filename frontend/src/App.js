@@ -1,7 +1,7 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./index.css";
 
-const API = "http://localhost:8000/api";
+const API = "https://breathe-esg-vdcu.onrender.com/api";
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 const fmt = (n) => n == null ? "—" : Number(n).toLocaleString("en-IN", { maximumFractionDigits: 2 });
