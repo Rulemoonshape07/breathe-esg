@@ -1,6 +1,8 @@
 # Breathe ESG — Emissions Ingestion Platform
 
-Live demo: [your-deployed-url]
+Live demo: https://breathe-esg-1-h9p6.onrender.com
+Backend API: https://breathe-esg-backend-uixk.onrender.com
+
 
 ## What This Does
 
