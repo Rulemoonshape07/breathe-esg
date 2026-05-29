@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import "./index.css";
 
-const API = "https://breathe-esg-vdcu.onrender.com/api";
+const API = "https://breathe-esg-backend-uixk.onrender.com/api";
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 const fmt = (n) => n == null ? "—" : Number(n).toLocaleString("en-IN", { maximumFractionDigits: 2 });
